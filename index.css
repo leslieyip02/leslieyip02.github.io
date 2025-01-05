@@ -59,7 +59,7 @@ code {
 main {
   height: fit-content;
   width: 100%;
-  margin: 5rem;
+  margin: 5rem 5rem 0rem 5rem;
 
   display: flex;
   flex-direction: column;
@@ -71,6 +71,10 @@ main {
 section {
   width: 100%;
   margin: 2rem auto;
+}
+
+:nth-last-child(1 of section) {
+  margin-bottom: 0rem;
 }
 
 .sidebar {
