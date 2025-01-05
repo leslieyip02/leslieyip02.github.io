@@ -45,7 +45,7 @@ h3 {
 p {
   margin: 0;
 
-  color: #888888;
+  color: #999999;
 }
 
 code {
@@ -197,6 +197,10 @@ a:hover > .badge {
   background-color: #aaaaaa;
 }
 
+:nth-last-child(1 of .timeline__segment) > .timeline__line {
+  border-radius: 2px 2px;
+}
+
 .experience__role,
 .experience__description {
   padding-bottom: 3rem;
@@ -207,8 +211,8 @@ a:hover > .badge {
   padding-bottom: 2rem;
 }
 
-:nth-last-child(1 of .timeline__segment) > .timeline__line {
-  border-radius: 2px 2px;
+.experience__emojis {
+  letter-spacing: 0.25rem;
 }
 
 .catalog {
@@ -263,24 +267,6 @@ a:hover > .badge {
 .catalog__entry:hover > div > .badge--skills {
   filter: saturate(100%);
   transition: all 0.3s ease-out;
-}
-
-@media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  h3 {
-    font-size: 0.8rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-  }
 }
 
 @media only screen and (max-width: 720px) {
